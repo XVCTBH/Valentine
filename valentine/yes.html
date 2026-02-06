@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Tri 💖</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+  <audio id="bgMusic" loop>
+  <source src="music.mp3" type="audio/mpeg">
+</audio>
+
+<script>
+  const music = document.getElementById("bgMusic");
+  if (localStorage.getItem("playMusic") === "true") {
+    music.volume = 0.3;
+    music.play();
+    localStorage.removeItem("playMusic");
+  }
+</script>
+
+
+  <div class="page">
+
+    <!-- Falling petals -->
+    <div class="petals">
+      <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+      <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+      <div class="petal"></div><div class="petal"></div><div class="petal"></div>
+      <div class="petal"></div>
+    </div>
+
+    <!-- Floating hearts -->
+    <div class="hearts">
+      <div class="heart"></div><div class="heart"></div><div class="heart"></div>
+      <div class="heart"></div><div class="heart"></div>
+    </div>
+
+    <!-- Valentine Letter Card -->
+    <div class="container glow">
+      <h1>THXS for saying yes bozo💖</h1>
+      <p>
+        Tri thank you for coming in my life you really made my days so much more enjoyable.
+      </p>
+
+      <p>
+        You mean more to me than words can ever explain. 🌸
+      </p>
+
+      <!-- Your photo -->
+      <div class="gallery">
+        <img src="images/us.jpg" alt="Us">
+      </div>
+    </div>
+
+  </div>
+
+</body>
+</html>
